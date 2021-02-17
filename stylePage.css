@@ -2,6 +2,11 @@ html {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #5f727f;
+}
+
 .d-flex {
   display: flex;
 }
@@ -73,4 +78,16 @@ html {
   border-radius: 3px;
   padding: 7px 13px;
   margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.top-area__button a {
+  color: white;
+}
+
+.top-area__button:hover {
+  opacity: 0.8;
 }
