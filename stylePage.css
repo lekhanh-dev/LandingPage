@@ -1,0 +1,76 @@
+html {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.aa {
+  font-family: "Montserrat", sans-serif;
+}
+
+.d-flex-align-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-center {
+  justify-content: center;
+}
+
+.align-center-horizontal {
+  margin: 0 auto;
+}
+
+.col-1-divide-3 {
+  width: 33.3333%;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.top-area {
+  border-top: 5px solid #00bcd4;
+  background: #f4f6f7;
+
+  font-size: 14px;
+  color: #5f727f;
+}
+
+.top-area i {
+  font-size: 16px;
+}
+
+.top-area__location > i,
+.top-area__phone-number > i {
+  padding-right: 3px;
+}
+
+.top-area__list-social-network > li {
+  padding: 0 8px;
+}
+
+.top-area__list-action > li {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.top-area__list-action i {
+  font-size: 10px;
+  padding-right: 5px;
+}
+
+.top-area__button {
+  color: white;
+  background: #494c64;
+  border-radius: 3px;
+  padding: 7px 13px;
+  margin: 10px 0;
+}
