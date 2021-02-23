@@ -118,6 +118,8 @@ a {
 .menu {
   background: white;
   box-shadow: 0 2px 7px #c2c2c2;
+  position: sticky;
+  top: 0;
 }
 
 .menu-item {
@@ -213,6 +215,53 @@ a {
 
 .slide-show {
   width: 100%;
-  height: 1500px;
+  height: 500px;
   background: #e3e8eb;
+}
+
+.block-1 {
+  padding: 145px 0;
+}
+
+.block-1__item {
+  /* padding-right: 76px; */
+  padding: 0 40px;
+  position: relative;
+  left: -40px;
+}
+
+.block-1__title > h1 {
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  width: 60%;
+  white-space: 20px;
+  line-height: 1.5;
+}
+
+.block-1__content {
+  margin-top: 25px;
+  width: 70%;
+  color: #5f727f;
+  line-height: 1.5;
+}
+
+.block-1__action {
+  margin-top: 50px;
+}
+
+.block-1__action > button {
+  cursor: pointer;
+  width: 147px;
+  height: 30px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.block-1__action > button:hover {
+  opacity: 0.7;
 }
