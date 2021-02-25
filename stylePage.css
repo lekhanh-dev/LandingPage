@@ -392,7 +392,7 @@ a {
   line-height: 1.5;
 }
 
-/* .full-width {
+.full-width {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -443,4 +443,4 @@ a {
   line-height: 1.5;
   padding-bottom: 40px;
   font-family: "Source Sans Pro", sans-serif;
-} */
+}
