@@ -36,11 +36,11 @@ a {
   margin: 0 auto;
 }
 
-.col-1-divide-3 {
+.col-4 {
   width: 33.3333%;
 }
 
-.col-1-divide-4 {
+.col-3 {
   width: 25%;
 }
 
@@ -229,9 +229,8 @@ a {
 }
 
 .block-1__item {
-  padding: 0 40px;
   position: relative;
-  left: -40px;
+  padding-right: 80px;
 }
 
 .block-1__title > h1 {
@@ -241,6 +240,7 @@ a {
   width: 60%;
   white-space: 20px;
   line-height: 1.5;
+  color: #3c3950;
 }
 
 .block-1__content {
@@ -337,3 +337,110 @@ a {
   font-size: 24px;
   color: white;
 }
+
+.why-choose-us {
+  padding-top: 115px;
+  padding-bottom: 55px;
+  background: #f0f3f2;
+  color: #3c3950;
+}
+
+.why-choose-us__header {
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+
+.why-choose-us__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.why-choose-us__item {
+  max-width: 360px;
+  padding: 60px 0;
+}
+
+.why-choose-us__item:nth-child(-n + 3) {
+  border-bottom: 1px solid #d6dde0;
+}
+
+.why-choose-us__item > div {
+  display: flex;
+  align-items: center;
+}
+
+.why-choose-us__icon {
+  background: #46485c;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+
+.why-choose-us__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+}
+
+.why-choose-us__content {
+  margin-left: 68px;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* .full-width {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+}
+
+.full-width--bg-green {
+  background: #aed581;
+}
+
+.full-width--bg-blue {
+  background: #00bcd4;
+}
+
+.full-width--bg-black {
+  background: #37394c;
+}
+
+.full-width--color-white {
+  color: white !important;
+}
+
+.full-width__item {
+  box-sizing: border-box;
+  width: 33.3333%;
+  padding-left: 55px;
+}
+
+.full-width__number {
+  font-size: 80px;
+  color: white;
+  padding: 60px 0;
+}
+
+.full-width__title {
+  font-size: 36px;
+  color: #ebf4e2;
+  padding-bottom: 40px;
+}
+
+.full-width__title > span {
+  color: #e7ff89;
+}
+
+.full-width__content {
+  color: #3c3950;
+  font-size: 24px;
+  line-height: 1.5;
+  padding-bottom: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+} */
