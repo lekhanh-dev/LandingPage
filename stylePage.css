@@ -908,3 +908,53 @@ a {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+
+.advertisement {
+  background: #ffcd46;
+  padding: 60px;
+}
+
+.advertisement__item {
+  flex: 33.33%;
+}
+
+.advertisement__logo {
+  text-align: left;
+}
+
+.advertisement__logo > span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 63px;
+  font-weight: 400;
+  color: #3c3950;
+}
+
+.advertisement__logo > img {
+  width: 73px;
+  height: 69px;
+  margin-top: -5px;
+}
+
+.advertisement__content {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #393d50;
+  line-height: 1.8;
+}
+
+.advertisement__button {
+  text-align: right;
+}
+
+.advertisement__button > button {
+  padding: 13px 33px;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 30px;
+  outline: none;
+  color: #393d50;
+  border: 3px solid #393d50;
+  background: transparent;
+}
