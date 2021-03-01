@@ -729,3 +729,182 @@ a {
   outline: none;
   font-size: 14px;
 }
+
+.pricing-table {
+  text-align: center;
+  padding: 128px 0 150px 0;
+}
+
+.pricing-table__header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #3c3950;
+  padding-bottom: 80px;
+}
+
+.pricing-table__content {
+  color: #5f727f;
+}
+
+.pricing-table__list-item {
+  background: white;
+  padding-top: 127px;
+  align-items: flex-start;
+}
+
+.pricing-table__item {
+  flex: 25%;
+  background: #f0f3f2;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  min-width: 291px;
+}
+
+.pricing-table__item:not(.pricing-table__item:nth-child(3)) {
+  margin-top: 26px;
+}
+
+.pricing-table__item:nth-child(3) {
+  background: white;
+}
+
+.pricing-table__item:nth-child(3) > .pricing-table__item-title {
+  padding-top: 40px;
+  position: relative;
+}
+
+.pricing-table__item:nth-child(3) > .pricing-table__item-title::before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #dfe5e8;
+  height: 100%;
+  right: -1px;
+  top: -1px;
+}
+
+.pricing-table__item:nth-child(3) > .pricing-table__item-order {
+  padding-bottom: 75px;
+  position: relative;
+}
+
+.pricing-table__item:nth-child(3) > .pricing-table__item-order::before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #dfe5e8;
+  height: 100%;
+  right: -1px;
+  bottom: -1px;
+}
+
+.pricing-table__item:nth-child(3) button {
+  background: #83bce9 !important;
+}
+
+.pricing-table__item-title {
+  font-size: 24px;
+  color: #5f727f;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #dfe5e8;
+  border-top: 1px solid #dfe5e8;
+}
+
+.pricing-table__item-title > span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+
+.pricing-table__icon-new {
+  position: absolute;
+  left: 36px;
+  width: 50px;
+  height: 50px;
+  background: #393d50;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.pricing-table--green-100 {
+  background: #b0de79;
+}
+
+.pricing-table--caribbean-green {
+  background: #7ee0bf;
+}
+
+.pricing-table--blue-100 {
+  background: #83bce9;
+}
+
+.pricing-table--blue-violet {
+  background: #a289e8;
+}
+
+.pricing-table__item-number {
+  display: flex;
+  flex-direction: column;
+  font-size: 65px;
+  color: white;
+  padding: 29px 0;
+}
+
+.pricing-table__item-number > span {
+  font-size: 16px;
+  color: white;
+  padding-top: 8px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.pricing-table__item > ul {
+  padding-top: 30px;
+  border-left: 1px solid #dfe5e8;
+}
+
+.pricing-table__item > ul > li {
+  padding: 20px 0 15px 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #5f727f;
+  border-bottom: 1px solid #dfe5e8;
+}
+
+.pricing-table__item > ul > li:last-child {
+  border: none;
+}
+
+.pricing-table__item-order {
+  text-align: center;
+  padding: 35px 0 50px 0;
+  border-left: 1px solid #dfe5e8;
+  border-bottom: 1px solid #dfe5e8;
+}
+
+.pricing-table__item-order > button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 12px 24px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: #393d50;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pricing-table__icon-triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid white;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  padding-right: 6px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
