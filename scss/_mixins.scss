@@ -1,0 +1,14 @@
+@mixin makeClass($prefix, $map, $properties-name) {
+  $keys: map.keys($map);
+  @each $key in $keys {
+    .#{$prefix}-#{$key} {
+      #{$properties-name}: map.get($map, $key);
+    }
+  }
+}
+
+@mixin media($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}

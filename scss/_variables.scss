@@ -1,0 +1,77 @@
+$text-color: (
+  "white": #fff,
+  "white-medium": #f4f6f7,
+  "blue-light": #00bcd4,
+  "green-light": #b0de79,
+  "spring-green": #7ee0bf,
+  "medium-purple": #a289e8,
+  "grey": #93a2ae,
+  "grey-light": #d8dadb,
+  "dark": #3c3950,
+);
+
+$background-color: (
+  "white": #fff,
+  "white-medium": #f4f6f7,
+  "blue": #00bcd4,
+  "blue-light": #00bcd4,
+  "blue-violet": #a289e8,
+  "caribbean-green": #7ee0bf,
+  "green": #aed581,
+  "grey-light": #d8dadb,
+  "grey": #414352,
+  "dark": #393b51,
+  "black": #181828,
+);
+
+$font-weight: (
+  "light": 300,
+  "medium": 500,
+  "bold": 700,
+);
+
+$border-rounded: (
+  "low": 5px,
+  "circle": 50%,
+  "high": 1000px,
+);
+
+$position: (
+  "relative": relative,
+  "absolute": absolute,
+  "sticky": sticky,
+);
+
+$display: (
+  "block": block,
+  "i-block": inline-block,
+  "flex": flex,
+  "grid": grid,
+);
+
+$justify-content: (
+  "center": center,
+  "space-between": space-between,
+);
+
+$align-item: (
+  "center": center,
+  "flex-start": flex-start,
+  "baseline": baseline,
+);
+
+$flex-direction: (
+  "column": column,
+);
+
+$flex-wrap: (
+  "wrap": wrap,
+  "nowrap": nowrap,
+);
+
+$breakpoint: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);

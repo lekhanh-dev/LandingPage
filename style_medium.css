@@ -1,0 +1,227 @@
+@media only screen and (max-width: 992px) {
+  .block-1__item {
+    flex: 100%;
+  }
+
+  .counter__list-item {
+    flex-wrap: wrap;
+  }
+
+  .counter__item {
+    flex: 33.33%;
+    padding-bottom: 40px;
+  }
+
+  .why-choose-us__list-item {
+    margin-left: 0;
+  }
+
+  .why-choose-us__item {
+    flex: 100%;
+    margin-left: 0;
+  }
+
+  .why-choose-us__item:nth-child(-n + 3) {
+    border: none;
+  }
+
+  .full-width__item {
+    flex: 100%;
+    padding: 20px;
+  }
+
+  .our-case-studies__group-image > div:nth-child(3) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .our-case-studies__group-image > div:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .our-case-studies__group-image > div:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .our-case-studies__group-image > div:nth-child(6) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .our-case-studies__group-image > div:nth-child(7) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .our-case-studies__group-image > div:nth-child(8) {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+  }
+
+  .core-competence__item {
+    flex: 100%;
+  }
+
+  .core-competence__item:nth-child(n)::before {
+    border: none;
+  }
+
+  .pricing-table__list-item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pricing-table__item {
+    flex: 0 0 33.33%;
+    margin-bottom: 50px;
+  }
+
+  .pricing-table__item:nth-child(3) > .pricing-table__item-title,
+  .pricing-table__item:nth-child(3) > ul,
+  .pricing-table__item:nth-child(3) > .pricing-table__item-order {
+    border-right: 1px solid #dfe5e8;
+  }
+
+  .advertisement__list-item {
+    flex-direction: column;
+  }
+
+  .advertisement__item {
+    flex: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .open-vacancies__list-item {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .open-vacancies__item {
+    flex: 0 0 100% !important;
+  }
+
+  .open-vacancies__our-team {
+    padding-right: 0;
+  }
+
+  .contact-us__item {
+    flex: 50%;
+  }
+
+  .footer-widgets .footer__item {
+    flex: calc(100% - 42px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .counter__item {
+    flex: 50%;
+  }
+
+  .pricing-table__item {
+    flex: 50%;
+  }
+
+  .pricing-table__item:nth-child(2) > .pricing-table__item-title,
+  .pricing-table__item:nth-child(2) > ul,
+  .pricing-table__item:nth-child(2) > .pricing-table__item-order {
+    border-right: 1px solid #dfe5e8;
+  }
+
+  .open-vacancies__position-content {
+    padding: 0;
+  }
+
+  .open-vacancies__list-position > li {
+    width: 100%;
+  }
+
+  .open-vacancies__position-image {
+    flex: 100%;
+  }
+
+  .open-vacancies__position-detail {
+    flex: 100%;
+    padding: 0;
+  }
+
+  .open-vacancies__position-image {
+    padding-top: 66.66%;
+    margin: 10px 30px 10px 30px;
+  }
+
+  .open-vacancies__position-detail {
+    margin: 0 30px;
+  }
+
+  .open-vacancies__position-requirements {
+    margin: 30px;
+  }
+
+  .open-vacancies__position-requirements > li {
+    flex: 100%;
+  }
+
+  .open-vacancies__position-requirements > li:nth-child(2n) {
+    padding-left: 17px;
+  }
+
+  .open-vacancies__position-requirements > li:nth-child(2n)::before {
+    left: 0;
+  }
+
+  .footer-nav > .container {
+    flex-direction: column-reverse;
+  }
+
+  .footer-nav .footer__item {
+    margin: 10px 0;
+  }
+
+  .our-case-studies__group-image > div:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .our-case-studies__group-image > div:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+  }
+
+  .our-case-studies__group-image > div:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+  }
+
+  .our-case-studies__group-image > div:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 2;
+  }
+
+  .our-case-studies__group-image > div:nth-child(5) {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 2;
+  }
+
+  .our-case-studies__group-image > div:nth-child(6) {
+    grid-column: 1 / span 2;
+    grid-row: 11 / span 2;
+  }
+
+  .our-case-studies__group-image > div:nth-child(7) {
+    grid-column: 1 / span 2;
+    grid-row: 13 / span 2;
+  }
+
+  .our-case-studies__group-image > div:nth-child(8) {
+    grid-column: 1 / span 2;
+    grid-row: 15;
+  }
+
+  .our-case-studies__group-btn > button {
+    margin-bottom: 15px;
+  }
+}
