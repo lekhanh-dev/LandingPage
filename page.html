@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Page</title>
-    <link rel="stylesheet" href="./reset.css" />
+    <title>Page use sass</title>
 
-    <link rel="stylesheet" href="./style_page.css" />
-    <link rel="stylesheet" href="./style_large.css" />
-    <link rel="stylesheet" href="./style_medium.css" />
-    <link rel="stylesheet" href="./style_small.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/shorthand.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -37,43 +34,41 @@
     <header class="top-area bg-light-medium">
       <div class="container">
         <div
-          class="top-area__list-item d-flex flex-justify-content-space-between flex-align-item-center text-secondary"
+          class="top-area__list-item d-flex flex-jus-c-space-between flex-align-i-center text-grey"
         >
-          <div class="top-area__item d-flex flex-justify-content-space-between">
+          <div class="d-flex flex-jus-c-space-between">
             <div class="top-area__location">
               <i class="fas fa-map-marker-alt"></i> 19th Ave News York,
-              NY95822,USA
+              NY9582,USA
             </div>
             <div class="top-area__phone-number">
               <i class="fas fa-headphones-alt"></i> +1 916-85-2253
             </div>
           </div>
-          <div class="top-area__item">
-            <ul class="top-area__list-social-network d-flex">
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="top-area__item d-flex flex-align-item-center">
+          <ul class="top-area__list-social-network d-flex">
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </li>
+          </ul>
+          <div class="d-flex flex-align-i-center">
             <ul class="top-area__list-action d-flex">
               <li>
                 <a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a>
@@ -86,36 +81,28 @@
               </li>
             </ul>
             <button
-              class="btn top-area__button border-rounded-low ff-source-san-pro"
+              class="btn top-area__button border-rounded-low ff-source-san-pro bg-dark"
             >
-              <a class="text-primary" href="#">Join Now</a>
+              <a class="text-white ff-source-san-pro" href="#">Join Now</a>
             </button>
           </div>
         </div>
       </div>
     </header>
 
-    <header class="menu bg-primary">
+    <section class="menu bg-white pos-sticky">
       <div class="container">
-        <div
-          class="menu__list-item d-flex flex-justify-content-space-between flex-align-item-center"
-        >
+        <div class="d-flex flex-jus-c-space-between flex-align-i-center">
           <input type="checkbox" id="check" name="check" />
+          <label class="menu__btn-open pos-relative" for="check"> </label>
           <div class="menu__item">
-            <div class="menu__left-side">
-              <label for="check">
-                <span></span>
-              </label>
-            </div>
-          </div>
-          <div class="menu__item">
-            <div class="menu__nav-wrapper d-flex">
-              <ul class="menu__list-nav d-flex ff-montserrat">
+            <nav class="menu__nav-wrapper d-flex">
+              <ul class="menu__list-nav d-flex ff-montserrat pos-relative">
                 <li class="font-weight-bold"><a href="#">HOME</a></li>
                 <li class="font-weight-bold">
                   <a href="#">PAGES </a>
                   <ul
-                    class="menu__list-nav-sub font-weight-light text-secondary bg-light-medium"
+                    class="menu__list-nav-sub pos-absolute font-weight-light text-grey bg-white-medium"
                   >
                     <li>Facebook</li>
                     <li>Youtube</li>
@@ -125,7 +112,7 @@
                 <li class="font-weight-bold">
                   <a href="#">BLOG </a>
                   <ul
-                    class="menu__list-nav-sub font-weight-light text-secondary bg-light-medium"
+                    class="menu__list-nav-sub pos-absolute font-weight-light text-grey bg-white-medium"
                   >
                     <li>BLOG 1</li>
                     <li>BLOG 2</li>
@@ -135,7 +122,7 @@
                 <li class="font-weight-bold">
                   <a href="#">PORTFOLIOS </a>
                   <ul
-                    class="menu__list-nav-sub font-weight-light text-secondary bg-light-medium"
+                    class="menu__list-nav-sub pos-absolute font-weight-light text-grey bg-white-medium"
                   >
                     <li>Menu menu 1</li>
                     <li>BLOG 2</li>
@@ -145,7 +132,7 @@
                 <li class="font-weight-bold">
                   <a href="#">SHOP </a>
                   <ul
-                    class="menu__list-nav-sub font-weight-light text-secondary bg-light-medium"
+                    class="menu__list-nav-sub pos-absolute font-weight-light text-grey bg-white-medium"
                   >
                     <li>SHOP 1</li>
                     <li>SHOP 2</li>
@@ -157,7 +144,7 @@
                 <li class="font-weight-bold">
                   <a href="#">FEATURES </a>
                   <ul
-                    class="menu__list-nav-sub font-weight-light text-secondary bg-light-medium"
+                    class="menu__list-nav-sub pos-absolute font-weight-light text-grey bg-white-medium"
                   >
                     <li>Facebook</li>
                     <li>Youtube</li>
@@ -167,7 +154,7 @@
                 <li class="font-weight-bold">
                   <a href="#">ELEMENTS </a>
                   <ul
-                    class="menu__list-nav-sub font-weight-light text-secondary bg-light-medium"
+                    class="menu__list-nav-sub pos-absolute font-weight-light text-grey bg-white-medium"
                   >
                     <li>Facebook</li>
                     <li>Youtube</li>
@@ -175,7 +162,7 @@
                   </ul>
                 </li>
               </ul>
-              <div class="menu__action d-flex flex-align-item-center">
+              <div class="menu__action d-flex flex-align-i-center">
                 <div class="menu__icon-language">
                   <img
                     class="menu__language"
@@ -194,14 +181,16 @@
                     height="15px"
                   />
                   <div class="triangle-left-icon"></div>
-                  <div class="menu__counter text-primary bg-blue-light">
-                    <span p-relative>200</span>
+                  <div
+                    class="menu__counter d-flex flex-align-i-center text-white bg-blue-light"
+                  >
+                    <span class="pos-relative">200</span>
                   </div>
                 </div>
               </div>
-            </div>
+            </nav>
           </div>
-          <div class="menu__item d-flex flex-align-item-center">
+          <div class="menu__item d-flex flex-align-i-center">
             <div class="menu__logo">
               <img src="./img/logo.png" alt="logo" />
             </div>
@@ -212,25 +201,25 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <section class="slide-show">
+    <section class="slide-show bg-grey">
       <div class="container-fluid">
         <div class="slide-show__box"></div>
       </div>
     </section>
 
-    <section class="block-1">
+    <section class="feature">
       <div class="container">
-        <div class="block-1__list-item d-flex flex-wrap">
-          <div class="block-1__item p-relative">
-            <div
-              class="block-1__title d-flex flex-justify-content-space-between flex-align-item-center"
+        <div class="feature__list-item d-flex flex-wrap">
+          <article class="feature__item pos-relative">
+            <header
+              class="feature__title d-flex flex-jus-c-space-between flex-align-i-center"
             >
               <h1 class="font-weight-bold ff-montserrat text-dark">
                 Lorem ipsum dolor sit
               </h1>
-              <div class="block-1__icon">
+              <div class="feature__icon">
                 <img
                   src="./img/icon2.png"
                   alt="icon"
@@ -238,29 +227,29 @@
                   height="46px"
                 />
               </div>
-            </div>
-            <div class="block-1__content text-secondary">
+            </header>
+            <div class="feature__content text-grey">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               sit qui eius vitae dolor dignissimos ullam asperiores architecto.
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-            <div class="block-1__action">
+            <div class="feature__action">
               <button
-                class="btn d-flex flex-justify-content-center flex-align-item-center border-rounded-low bg-blue-light text-primary ff-montserrat"
+                class="btn d-flex flex-jus-c-center flex-align-i-center border-rounded-low bg-blue-light text-white ff-montserrat"
               >
                 Learn more
               </button>
             </div>
-          </div>
-          <div class="block-1__item p-relative">
-            <div
-              class="block-1__title d-flex flex-justify-content-space-between flex-align-item-center"
+          </article>
+          <article class="feature__item pos-relative">
+            <header
+              class="feature__title d-flex flex-jus-c-space-between flex-align-i-center"
             >
               <h1 class="font-weight-bold ff-montserrat">
                 Lorem ipsum dolor sit
               </h1>
-              <div class="block-1__icon">
+              <div class="feature__icon">
                 <img
                   src="./img/icon3.png"
                   alt="icon"
@@ -268,29 +257,29 @@
                   height="38px"
                 />
               </div>
-            </div>
-            <div class="block-1__content text-secondary">
+            </header>
+            <div class="feature__content text-grey">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               sit qui eius vitae dolor dignissimos ullam asperiores architecto.
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-            <div class="block-1__action">
+            <div class="feature__action">
               <button
-                class="btn d-flex flex-justify-content-center flex-align-item-center border-rounded-low bg-blue-light text-primary ff-montserrat"
+                class="btn d-flex flex-jus-c-center flex-align-i-center border-rounded-low bg-blue-light text-white ff-montserrat"
               >
                 Learn more
               </button>
             </div>
-          </div>
-          <div class="block-1__item p-relative">
-            <div
-              class="block-1__title d-flex flex-justify-content-space-between flex-align-item-center"
+          </article>
+          <article class="feature__item pos-relative">
+            <header
+              class="feature__title d-flex flex-jus-c-space-between flex-align-i-center"
             >
               <h1 class="font-weight-bold ff-montserrat">
                 Lorem ipsum dolor sit
               </h1>
-              <div class="block-1__icon">
+              <div class="feature__icon">
                 <img
                   src="./img/icon4.png"
                   alt="icon"
@@ -298,32 +287,33 @@
                   height="48px"
                 />
               </div>
-            </div>
-            <div class="block-1__content text-secondary">
+            </header>
+            <div class="feature__content text-grey">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               sit qui eius vitae dolor dignissimos ullam asperiores architecto.
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-            <div class="block-1__action">
+            <div class="feature__action">
               <button
-                class="btn d-flex flex-justify-content-center flex-align-item-center border-rounded-low bg-blue-light text-primary ff-montserrat"
+                class="btn d-flex flex-jus-c-center flex-align-i-center border-rounded-low bg-blue-light text-white ff-montserrat"
               >
                 Learn more
               </button>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
-    <section class="counter">
+
+    <section class="counter bg-dark">
       <div class="container">
         <div class="counter__list-item d-flex">
-          <div
-            class="counter__item counter--green-light d-flex flex-align-item-center flex-column"
+          <article
+            class="counter__item text-green-light d-flex flex-align-i-center flex-dir-column"
           >
             <div
-              class="counter__box d-flex flex-justify-content-center flex-align-item-center p-relative"
+              class="counter__box d-flex flex-jus-c-center flex-align-i-center pos-relative"
             >
               <div class="counter__icon">
                 <img src="./img/icon5.png" alt="icon" />
@@ -332,15 +322,15 @@
             <div class="counter__number font-weight-light ff-montserrat">
               2189
             </div>
-            <div class="counter__title font-weight-light text-primary">
+            <div class="counter__title font-weight-light text-white">
               Support Posts
             </div>
-          </div>
-          <div
-            class="counter__item counter--spring-green d-flex flex-align-item-center flex-column"
+          </article>
+          <article
+            class="counter__item text-spring-green d-flex flex-align-i-center flex-dir-column"
           >
             <div
-              class="counter__box d-flex flex-justify-content-center flex-align-item-center p-relative"
+              class="counter__box d-flex flex-jus-c-center flex-align-i-center pos-relative"
             >
               <div class="counter__icon">
                 <img src="./img/icon6.png" alt="icon" />
@@ -349,15 +339,15 @@
             <div class="counter__number font-weight-light ff-montserrat">
               125
             </div>
-            <div class="counter__title font-weight-light text-primary">
+            <div class="counter__title font-weight-light text-white">
               Customers
             </div>
-          </div>
-          <div
-            class="counter__item counter--blue-light d-flex flex-align-item-center flex-column"
+          </article>
+          <article
+            class="counter__item text-blue-light d-flex flex-align-i-center flex-dir-column"
           >
             <div
-              class="counter__box d-flex flex-justify-content-center flex-align-item-center p-relative"
+              class="counter__box d-flex flex-jus-c-center flex-align-i-center pos-relative"
             >
               <div class="counter__icon">
                 <img src="./img/icon7.png" alt="icon" />
@@ -366,15 +356,15 @@
             <div class="counter__number font-weight-light ff-montserrat">
               4789
             </div>
-            <div class="counter__title font-weight-light text-primary">
+            <div class="counter__title font-weight-light text-white">
               Lorem Ipsum Dolor
             </div>
-          </div>
+          </article>
           <div
-            class="counter__item counter--medium-purple d-flex flex-align-item-center flex-column"
+            class="counter__item text-medium-purple d-flex flex-align-i-center flex-dir-column"
           >
             <div
-              class="counter__box d-flex flex-justify-content-center flex-align-item-center p-relative"
+              class="counter__box d-flex flex-jus-c-center flex-align-i-center pos-relative"
             >
               <div class="counter__icon">
                 <img src="./img/icon8.png" alt="icon" />
@@ -383,7 +373,7 @@
             <div class="counter__number font-weight-light ff-montserrat">
               502
             </div>
-            <div class="counter__title font-weight-light text-primary">
+            <div class="counter__title font-weight-light text-white">
               Lorem Ipsum Dolor
             </div>
           </div>
@@ -393,13 +383,15 @@
 
     <section class="why-choose-us text-dark bg-light">
       <div class="container">
-        <div class="why-choose-us__header font-weight-light ff-montserrat">
+        <header class="why-choose-us__header font-weight-light ff-montserrat">
           <span class="font-weight-bold">WHY</span> CHOOSING US
-        </div>
+        </header>
         <div class="why-choose-us__list-item d-flex flex-wrap">
-          <div class="why-choose-us__item">
-            <div class="d-flex flex-align-item-center">
-              <div class="why-choose-us__icon border-rounded-50-percent"></div>
+          <article class="why-choose-us__item">
+            <div class="d-flex flex-align-i-center">
+              <div
+                class="why-choose-us__icon border-rounded-circle bg-grey"
+              ></div>
               <div class="why-choose-us__title ff-montserrat">LOREM IPSUM</div>
             </div>
             <div class="why-choose-us__content">
@@ -408,10 +400,12 @@
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-          </div>
-          <div class="why-choose-us__item">
-            <div class="d-flex flex-align-item-center">
-              <div class="why-choose-us__icon border-rounded-50-percent"></div>
+          </article>
+          <article class="why-choose-us__item">
+            <div class="d-flex flex-align-i-center">
+              <div
+                class="why-choose-us__icon border-rounded-circle bg-grey"
+              ></div>
               <div class="why-choose-us__title ff-montserrat">LOREM IPSUM</div>
             </div>
             <div class="why-choose-us__content">
@@ -420,10 +414,12 @@
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-          </div>
-          <div class="why-choose-us__item">
-            <div class="d-flex flex-align-item-center">
-              <div class="why-choose-us__icon border-rounded-50-percent"></div>
+          </article>
+          <article class="why-choose-us__item">
+            <div class="d-flex flex-align-i-center">
+              <div
+                class="why-choose-us__icon border-rounded-circle bg-grey"
+              ></div>
               <div class="why-choose-us__title ff-montserrat">LOREM IPSUM</div>
             </div>
             <div class="why-choose-us__content">
@@ -432,10 +428,12 @@
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-          </div>
-          <div class="why-choose-us__item">
-            <div class="d-flex flex-align-item-center">
-              <div class="why-choose-us__icon border-rounded-50-percent"></div>
+          </article>
+          <article class="why-choose-us__item">
+            <div class="d-flex flex-align-i-center">
+              <div
+                class="why-choose-us__icon border-rounded-circle bg-grey"
+              ></div>
               <div class="why-choose-us__title ff-montserrat">LOREM IPSUM</div>
             </div>
             <div class="why-choose-us__content">
@@ -444,10 +442,12 @@
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-          </div>
-          <div class="why-choose-us__item">
-            <div class="d-flex flex-align-item-center">
-              <div class="why-choose-us__icon border-rounded-50-percent"></div>
+          </article>
+          <article class="why-choose-us__item">
+            <div class="d-flex flex-align-i-center">
+              <div
+                class="why-choose-us__icon border-rounded-circle bg-grey"
+              ></div>
               <div class="why-choose-us__title ff-montserrat">LOREM IPSUM</div>
             </div>
             <div class="why-choose-us__content">
@@ -456,10 +456,12 @@
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-          </div>
-          <div class="why-choose-us__item">
-            <div class="d-flex flex-align-item-center">
-              <div class="why-choose-us__icon border-rounded-50-percent"></div>
+          </article>
+          <article class="why-choose-us__item">
+            <div class="d-flex flex-align-i-center">
+              <div
+                class="why-choose-us__icon border-rounded-circle bg-grey"
+              ></div>
               <div class="why-choose-us__title ff-montserrat">LOREM IPSUM</div>
             </div>
             <div class="why-choose-us__content">
@@ -468,7 +470,7 @@
               Est quae consequatur eaque, molestiae perspiciatis earum
               voluptatibus autem ab modi aliquam.
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -476,10 +478,10 @@
     <section class="full-width">
       <div class="container-fluid">
         <div class="full-width__list-item d-flex flex-wrap ff-montserrat">
-          <div class="full-width__item full-width--bg-green">
-            <div class="full-width__number font-weight-bold text-primary">
+          <article class="full-width__item bg-green">
+            <header class="full-width__number font-weight-bold text-white">
               01.
-            </div>
+            </header>
             <div class="full-width__title font-weight-light">
               LOREM <span class="font-weight-bold">IPSUM</span>
             </div>
@@ -489,11 +491,11 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               sit qui eius vitae dolor dignissimos ullam asperiores architecto
             </div>
-          </div>
-          <div class="full-width__item full-width--bg-blue">
-            <div class="full-width__number font-weight-bold text-primary">
+          </article>
+          <article class="full-width__item bg-blue">
+            <header class="full-width__number font-weight-bold text-white">
               02.
-            </div>
+            </header>
             <div class="full-width__title font-weight-light">
               LEFT SIDE <span class="font-weight-bold">ALIGNING</span>
             </div>
@@ -503,11 +505,11 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               sit qui eius vitae dolor dignissimos ullam asperiores architecto
             </div>
-          </div>
-          <div class="full-width__item full-width--bg-black">
-            <div class="full-width__number font-weight-bold text-primary">
+          </article>
+          <article class="full-width__item bg-grey">
+            <header class="full-width__number font-weight-bold text-white">
               03.
-            </div>
+            </header>
             <div class="full-width__title font-weight-light">
               CURSUS <span class="font-weight-bold">MAURIS</span>
             </div>
@@ -517,68 +519,68 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               sit qui eius vitae dolor dignissimos ullam asperiores architecto
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="our-case-studies">
       <div class="container">
-        <div
+        <header
           class="our-case-studies__header ff-montserrat font-weight-light text-dark"
         >
           <span class="font-weight-bold">OUR CASE</span> STUDIES
-        </div>
-        <div class="our-case-studies__content text-secondary">
+        </header>
+        <div class="our-case-studies__content text-grey">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
           numquam fugit praesentium voluptates dolorum consequatur blanditiis
           debitis accusamus, quae ratione quo nemo id sed repudiandae nam autem
           consequuntur porro nobis?
         </div>
         <div class="our-case-studies__group-btn">
-          <button class="btn ff-montserrat border-rounded-high text-secondary">
+          <button class="btn ff-montserrat border-rounded-high text-grey">
             ALL
           </button>
-          <button class="btn ff-montserrat border-rounded-high text-secondary">
+          <button class="btn ff-montserrat border-rounded-high text-grey">
             HOVER BUT
           </button>
-          <button class="btn ff-montserrat border-rounded-high text-secondary">
+          <button class="btn ff-montserrat border-rounded-high text-grey">
             ACTIVE BUT
           </button>
-          <button class="btn ff-montserrat border-rounded-high text-secondary">
+          <button class="btn ff-montserrat border-rounded-high text-grey">
             CATEGORY 3
           </button>
         </div>
         <div class="our-case-studies__group-image">
-          <div class="p-relative">
-            <img src="./img/image1.jpg" alt="image" />
+          <div class="pos-relative">
+            <img class="pos-absolute" src="./img/image1.jpg" alt="image" />
           </div>
-          <div class="p-relative">
-            <img src="./img/image3.jpg" alt="image" />
+          <div class="pos-relative">
+            <img class="pos-absolute" src="./img/image3.jpg" alt="image" />
           </div>
-          <div class="p-relative">
-            <img src="./img/image4.jpg" alt="image" />
+          <div class="pos-relative">
+            <img class="pos-absolute" src="./img/image4.jpg" alt="image" />
           </div>
-          <div class="p-relative">
-            <img src="./img/image2.jpg" alt="image" />
+          <div class="pos-relative">
+            <img class="pos-absolute" src="./img/image2.jpg" alt="image" />
           </div>
-          <div class="p-relative">
-            <img src="./img/image5.jpg" alt="image" />
+          <div class="pos-relative">
+            <img class="pos-absolute" src="./img/image5.jpg" alt="image" />
           </div>
-          <div class="p-relative">
-            <img src="./img/image6.jpg" alt="image" />
+          <div class="pos-relative">
+            <img class="pos-absolute" src="./img/image6.jpg" alt="image" />
           </div>
-          <div class="p-relative">
-            <img src="./img/image7.jpg" alt="image" />
+          <div class="pos-relative">
+            <img class="pos-absolute" src="./img/image7.jpg" alt="image" />
           </div>
-          <div class="p-relative">
-            <img src="./img/image8.jpg" alt="image" />
+          <div class="pos-relative">
+            <img class="pos-absolute" src="./img/image8.jpg" alt="image" />
           </div>
         </div>
-        <div class="our-case-studies__footer d-flex flex-align-item-center">
+        <div class="our-case-studies__footer d-flex flex-align-i-center">
           <div></div>
           <button
-            class="btn ff-montserrat border-rounded-high bg-primary text-blue-light"
+            class="btn ff-montserrat border-rounded-high bg-white text-blue-light"
           >
             MORE WORKS
           </button>
@@ -588,12 +590,12 @@
     </section>
 
     <section class="core-competence">
-      <div class="core-competence__header text-primary p-relative">
+      <div class="core-competence__header text-white pos-relative">
         <div class="container">
-          <div class="core-competence__header-title ff-montserrat">
+          <header class="core-competence__header-title ff-montserrat">
             <span class="font-weight-bold">CORE </span
             ><span class="font-weight-light">COMPETENCE</span>
-          </div>
+          </header>
           <div class="core-competence__header-content">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             incidunt deserunt repudiandae dolore libero, dolor cumque minima
@@ -605,15 +607,15 @@
           </div>
         </div>
       </div>
-      <div class="core-competence__list-item bg-secondary">
+      <div class="core-competence__list-item bg-dark">
         <div class="container">
           <div class="d-flex flex-wrap">
-            <div class="core-competence__item text-primary p-relative">
-              <div class="core-competence__item-icon p-relative">
+            <article class="core-competence__item text-white pos-relative">
+              <div class="core-competence__item-icon pos-relative">
                 <img src="./img/icon9.png" alt="icon" />
               </div>
               <div
-                class="core-competence__item-title ff-montserrat font-weight-bold p-relative"
+                class="core-competence__item-title ff-montserrat font-weight-bold pos-relative"
               >
                 CONSULTING
               </div>
@@ -626,19 +628,19 @@
               </div>
               <div class="core-competence__item-button">
                 <button
-                  class="btn ff-montserrat border-rounded-high bg-secondary text-blue-light"
+                  class="btn ff-montserrat border-rounded-high bg-grey text-blue-light"
                 >
                   LEARN MORE
                 </button>
               </div>
-            </div>
+            </article>
 
-            <div class="core-competence__item text-primary p-relative">
-              <div class="core-competence__item-icon p-relative">
+            <article class="core-competence__item text-white pos-relative">
+              <div class="core-competence__item-icon pos-relative">
                 <img src="./img/icon10.png" alt="icon" />
               </div>
               <div
-                class="core-competence__item-title ff-montserrat font-weight-bold p-relative"
+                class="core-competence__item-title ff-montserrat font-weight-bold pos-relative"
               >
                 PROGRAMMING
               </div>
@@ -651,19 +653,19 @@
               </div>
               <div class="core-competence__item-button">
                 <button
-                  class="btn ff-montserrat border-rounded-high bg-secondary text-blue-light"
+                  class="btn ff-montserrat border-rounded-high bg-grey text-blue-light"
                 >
                   LEARN MORE
                 </button>
               </div>
-            </div>
+            </article>
 
-            <div class="core-competence__item text-primary p-relative">
-              <div class="core-competence__item-icon p-relative">
+            <article class="core-competence__item text-white pos-relative">
+              <div class="core-competence__item-icon pos-relative">
                 <img src="./img/icon11.png" alt="icon" />
               </div>
               <div
-                class="core-competence__item-title ff-montserrat font-weight-bold p-relative"
+                class="core-competence__item-title ff-montserrat font-weight-bold pos-relative"
               >
                 DDEVOLOPMENT
               </div>
@@ -676,19 +678,19 @@
               </div>
               <div class="core-competence__item-button">
                 <button
-                  class="btn ff-montserrat border-rounded-high bg-secondary text-blue-light"
+                  class="btn ff-montserrat border-rounded-high bg-grey text-blue-light"
                 >
                   LEARN MORE
                 </button>
               </div>
-            </div>
+            </article>
 
-            <div class="core-competence__item text-primary p-relative">
-              <div class="core-competence__item-icon p-relative">
+            <article class="core-competence__item text-white pos-relative">
+              <div class="core-competence__item-icon pos-relative">
                 <img src="./img/icon12.png" alt="icon" />
               </div>
               <div
-                class="core-competence__item-title ff-montserrat font-weight-bold p-relative"
+                class="core-competence__item-title ff-montserrat font-weight-bold pos-relative"
               >
                 MARKETING
               </div>
@@ -701,12 +703,12 @@
               </div>
               <div class="core-competence__item-button">
                 <button
-                  class="btn ff-montserrat border-rounded-high bg-secondary text-blue-light"
+                  class="btn ff-montserrat border-rounded-high bg-grey text-blue-light"
                 >
                   LEARN MORE
                 </button>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
@@ -714,12 +716,12 @@
 
     <section class="pricing-table">
       <div class="container">
-        <div
+        <header
           class="pricing-table__header font-weight-light ff-montserrat text-dark"
         >
           <span class="font-weight-bold">PRICING</span> TABLE
-        </div>
-        <div class="pricing-table__content text-secondary">
+        </header>
+        <div class="pricing-table__content text-grey">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
           incidunt deserunt repudiandae dolore libero, dolor cumque minima
           reprehenderit recusandae sequi inventore possimus, non saepe? Libero
@@ -729,19 +731,21 @@
           consequatur omnis a beatae.
         </div>
         <div
-          class="pricing-table__list-item d-flex flex-align-item-flex-start bg-primary"
+          class="pricing-table__list-item d-flex flex-align-i-flex-start bg-primary"
         >
-          <div class="pricing-table__item ff-montserrat bg-light p-relative">
-            <div class="pricing-table__item-title text-secondary">BEGINNER</div>
+          <article
+            class="pricing-table__item ff-montserrat bg-white-medium pos-relative"
+          >
+            <div class="pricing-table__item-title text-grey">BEGINNER</div>
             <div
-              class="pricing-table__item-number pricing-table--green-100 d-flex flex-column text-primary font-weight-light"
+              class="pricing-table__item-number bg-green d-flex flex-dir-column text-white font-weight-light"
             >
               $10
               <span class="ff-source-san-pro font-weight-medium"
                 >Per Month</span
               >
             </div>
-            <ul class="ff-source-san-pro text-secondary">
+            <ul class="ff-source-san-pro text-grey">
               <li>Photo sharing school</li>
               <li>Drop out ramen hustle</li>
               <li>Coworking viral landing</li>
@@ -751,25 +755,27 @@
             </ul>
             <div class="pricing-table__item-order">
               <button
-                class="btn ff-source-san-pro border-rounded-high d-flex flex-align-item-center text-primary margin-0-auto font-weight-bold"
+                class="btn ff-source-san-pro border-rounded-high d-flex flex-align-i-center text-white margin-0-auto font-weight-bold"
               >
-                <div class="pricing-table__icon-triangle"></div>
+                <div class="pricing-table__icon-triangle d-i-block"></div>
                 ORDER
               </button>
             </div>
-          </div>
+          </article>
 
-          <div class="pricing-table__item ff-montserrat bg-light p-relative">
-            <div class="pricing-table__item-title text-secondary">ADVANCED</div>
+          <article
+            class="pricing-table__item ff-montserrat bg-white-medium pos-relative"
+          >
+            <div class="pricing-table__item-title text-grey">ADVANCED</div>
             <div
-              class="pricing-table__item-number pricing-table--caribbean-green d-flex flex-column text-primary font-weight-light"
+              class="pricing-table__item-number bg-caribbean-green d-flex flex-dir-column text-white font-weight-light"
             >
               $45
               <span class="ff-source-san-pro font-weight-medium"
                 >Per Month</span
               >
             </div>
-            <ul class="ff-source-san-pro text-secondary">
+            <ul class="ff-source-san-pro text-grey">
               <li>Photo sharing school</li>
               <li>Drop out ramen hustle</li>
               <li>Coworking viral landing</li>
@@ -779,22 +785,24 @@
             </ul>
             <div class="pricing-table__item-order">
               <button
-                class="btn ff-source-san-pro border-rounded-high d-flex flex-align-item-center text-primary margin-0-auto font-weight-bold"
+                class="btn ff-source-san-pro border-rounded-high d-flex flex-align-i-center text-white margin-0-auto font-weight-bold"
               >
-                <div class="pricing-table__icon-triangle"></div>
+                <div class="pricing-table__icon-triangle d-i-block"></div>
                 ORDER
               </button>
             </div>
-          </div>
+          </article>
 
-          <div class="pricing-table__item ff-montserrat bg-primary p-relative">
+          <article
+            class="pricing-table__item ff-montserrat bg-white pos-relative"
+          >
             <div
-              class="pricing-table__icon-new d-flex flex-align-item-center flex-justify-content-center font-weight-bold text-primary border-rounded-50-percent"
+              class="pricing-table__icon-new pos-absolute d-flex flex-align-i-center flex-jus-c-center font-weight-bold text-white border-rounded-circle bg-dark"
             >
               NEW
             </div>
             <div
-              class="pricing-table__item-title text-secondary d-flex flex-column p-relative"
+              class="pricing-table__item-title text-grey d-flex flex-dir-column pos-relative"
             >
               MASTER
               <span class="ff-source-san-pro"
@@ -803,14 +811,14 @@
             </div>
 
             <div
-              class="pricing-table__item-number pricing-table--blue-100 d-flex flex-column text-primary font-weight-light"
+              class="pricing-table__item-number bg-blue d-flex flex-dir-column text-white font-weight-light"
             >
               $249
               <span class="ff-source-san-pro font-weight-medium"
                 >Per Month</span
               >
             </div>
-            <ul class="ff-source-san-pro text-secondary">
+            <ul class="ff-source-san-pro text-grey">
               <li>Photo sharing school</li>
               <li>Drop out ramen hustle</li>
               <li>Coworking viral landing</li>
@@ -820,25 +828,27 @@
             </ul>
             <div class="pricing-table__item-order">
               <button
-                class="btn ff-source-san-pro border-rounded-high d-flex flex-align-item-center text-primary margin-0-auto font-weight-bold"
+                class="btn ff-source-san-pro border-rounded-high d-flex flex-align-i-center text-white margin-0-auto font-weight-bold"
               >
-                <div class="pricing-table__icon-triangle"></div>
+                <div class="pricing-table__icon-triangle d-i-block"></div>
                 ORDER
               </button>
             </div>
-          </div>
+          </article>
 
-          <div class="pricing-table__item ff-montserrat bg-light p-relative">
-            <div class="pricing-table__item-title text-secondary">INSANE</div>
+          <article
+            class="pricing-table__item ff-montserrat bg-white-medium pos-relative"
+          >
+            <div class="pricing-table__item-title text-grey">INSANE</div>
             <div
-              class="pricing-table__item-number pricing-table--blue-violet d-flex flex-column text-primary font-weight-light"
+              class="pricing-table__item-number bg-blue-violet d-flex flex-dir-column text-white font-weight-light"
             >
               $1399
               <span class="ff-source-san-pro font-weight-medium"
                 >Per Month</span
               >
             </div>
-            <ul class="ff-source-san-pro text-secondary">
+            <ul class="ff-source-san-pro text-grey">
               <li>Photo sharing school</li>
               <li>Drop out ramen hustle</li>
               <li>Coworking viral landing</li>
@@ -848,22 +858,22 @@
             </ul>
             <div class="pricing-table__item-order">
               <button
-                class="btn ff-source-san-pro border-rounded-high d-flex flex-align-item-center text-primary margin-0-auto font-weight-bold"
+                class="btn ff-source-san-pro border-rounded-high d-flex flex-align-i-center text-white margin-0-auto font-weight-bold"
               >
-                <div class="pricing-table__icon-triangle"></div>
+                <div class="pricing-table__icon-triangle d-i-block"></div>
                 ORDER
               </button>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="advertisement">
       <div class="container">
-        <div class="advertisement__list-item d-flex flex-align-item-center">
+        <div class="advertisement__list-item d-flex flex-align-i-center">
           <div
-            class="advertisement__item advertisement__wrap-logo d-flex flex-align-item-baseline ff-montserrat font-weight-medium text-dark"
+            class="advertisement__item advertisement__wrap-logo d-flex flex-align-i-baseline ff-montserrat font-weight-medium text-dark"
           >
             <span>THE</span>
             <div class="advertisement__logo">
@@ -872,12 +882,12 @@
             <span>GEM</span>
           </div>
           <div
-            class="advertisement__item advertisement__content font-weight-light"
+            class="advertisement__item advertisement__content text-dark font-weight-light"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </div>
           <div class="advertisement__item advertisement__button">
-            <button class="btn border-rounded-high">
+            <button class="btn border-rounded-high text-dark">
               GREAT, I WANT TO BUY NOW!
             </button>
           </div>
@@ -889,18 +899,16 @@
       <div class="container">
         <div class="open-vacancies__list-item d-flex">
           <div class="open-vacancies__item">
-            <div
+            <header
               class="open-vacancies__title font-weight-bold ff-montserrat text-dark"
             >
               OUR TEAM
-            </div>
+            </header>
             <ul class="open-vacancies__our-team">
-              <li class="bg-light">
+              <li class="bg-grey-light">
                 <div class="open-vacancies__person-box d-flex">
                   <div class="open-vacancies__person-box-left">
-                    <div
-                      class="open-vacancies__avatar border-rounded-50-percent"
-                    >
+                    <div class="open-vacancies__avatar border-rounded-circle">
                       <img src="./img/avatar.jpg" alt="avatar" />
                     </div>
                   </div>
@@ -910,7 +918,9 @@
                     >
                       Emerson Anderson
                     </div>
-                    <div class="open-vacancies__position font-weight-bold">
+                    <div
+                      class="open-vacancies__position font-weight-bold text-grey"
+                    >
                       Senior Sales Manager
                     </div>
                     <div
@@ -921,12 +931,10 @@
                   </div>
                 </div>
               </li>
-              <li class="bg-light">
+              <li class="bg-grey-light">
                 <div class="open-vacancies__person-box d-flex">
                   <div class="open-vacancies__person-box-left">
-                    <div
-                      class="open-vacancies__avatar border-rounded-50-percent"
-                    >
+                    <div class="open-vacancies__avatar border-rounded-circle">
                       <img src="./img/avatar.jpg" alt="avatar" />
                     </div>
                   </div>
@@ -936,7 +944,9 @@
                     >
                       Emerson Anderson
                     </div>
-                    <div class="open-vacancies__position font-weight-bold">
+                    <div
+                      class="open-vacancies__position font-weight-bold text-grey"
+                    >
                       Senior Sales Manager
                     </div>
                     <div
@@ -947,12 +957,10 @@
                   </div>
                 </div>
               </li>
-              <li class="bg-light">
+              <li class="bg-grey-light">
                 <div class="open-vacancies__person-box d-flex">
                   <div class="open-vacancies__person-box-left">
-                    <div
-                      class="open-vacancies__avatar border-rounded-50-percent"
-                    >
+                    <div class="open-vacancies__avatar border-rounded-circle">
                       <img src="./img/avatar.jpg" alt="avatar" />
                     </div>
                   </div>
@@ -962,7 +970,9 @@
                     >
                       Emerson Anderson
                     </div>
-                    <div class="open-vacancies__position font-weight-bold">
+                    <div
+                      class="open-vacancies__position font-weight-bold text-grey"
+                    >
                       Senior Sales Manager
                     </div>
                     <div
@@ -976,31 +986,41 @@
             </ul>
           </div>
           <div class="open-vacancies__item">
-            <div class="open-vacancies__title font-weight-bold ff-montserrat">
+            <header
+              class="open-vacancies__title font-weight-bold ff-montserrat"
+            >
               OPEN VACANCIES
-            </div>
+            </header>
             <div class="open-vacancies__wrap-position">
-              <ul
-                class="open-vacancies__list-position ff-montserrat text-secondary"
-              >
+              <ul class="open-vacancies__list-position ff-montserrat text-grey">
                 <li
-                  class="open-vacancies--button-active font-weight-bold bg-primary"
+                  class="open-vacancies--button-active font-weight-bold d-i-block"
                 >
                   WEB DESIGNER
                 </li>
-                <li class="font-weight-light bg-light-medium">MANAGER</li>
-                <li class="font-weight-light bg-light-medium">PROGRAMER</li>
-                <li class="font-weight-light bg-light-medium">SUPPORT STAFF</li>
+                <li class="font-weight-light bg-grey-light d-i-block">
+                  MANAGER
+                </li>
+                <li class="font-weight-light bg-grey-light d-i-block">
+                  PROGRAMER
+                </li>
+                <li class="font-weight-light bg-grey-light d-i-block">
+                  SUPPORT STAFF
+                </li>
               </ul>
               <div class="open-vacancies__position-content d-flex flex-wrap">
-                <div class="open-vacancies__position-image p-relative">
-                  <img src="./img/position.jpg" alt="position-image" />
+                <div class="open-vacancies__position-image pos-relative">
+                  <img
+                    class="pos-absolute"
+                    src="./img/position.jpg"
+                    alt="position-image"
+                  />
                 </div>
                 <div class="open-vacancies__position-detail">
                   <h1 class="ff-montserrat font-weight-bold text-dark">
                     WEB DESIGNER
                   </h1>
-                  <p class="text-secondary">
+                  <p class="text-grey">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -1010,28 +1030,30 @@
                   </p>
                 </div>
                 <ul
-                  class="open-vacancies__position-requirements d-flex flex-wrap text-secondary"
+                  class="open-vacancies__position-requirements d-flex flex-wrap text-grey"
                 >
-                  <li class="p-relative">
+                  <li class="pos-relative">
                     Lorem ipsum dolor sit amet, consectetur
                   </li>
-                  <li class="p-relative">
+                  <li class="pos-relative">
                     Adipisicing elit, sed do eiusmod tempor
                   </li>
-                  <li class="p-relative">
+                  <li class="pos-relative">
                     Lorem ipsum dolor sit amet, consectetur
                   </li>
-                  <li class="p-relative">
+                  <li class="pos-relative">
                     Incididunt ut labore dolore magna aliqua
                   </li>
-                  <li class="p-relative">
+                  <li class="pos-relative">
                     Lorem ipsum dolor sit amet, consectetur
                   </li>
-                  <li class="p-relative">
+                  <li class="pos-relative">
                     Lorem ipsum dolor sit amet, consectetur
                   </li>
-                  <li class="p-relative">Enim ad minim veniam, quis nostrud</li>
-                  <li class="p-relative">
+                  <li class="pos-relative">
+                    Enim ad minim veniam, quis nostrud
+                  </li>
+                  <li class="pos-relative">
                     Lorem ipsum dolor sit amet, consectetur
                   </li>
                 </ul>
@@ -1045,51 +1067,51 @@
     <section class="contact-us bg-dark">
       <div class="container">
         <div class="contact-us__list-item d-flex ff-montserrat">
-          <div class="contact-us__item">
-            <div class="contact-us__img">
+          <article class="contact-us__item">
+            <div class="contact-us__img d-i-block">
               <img src="./img/adress.png" alt="icon-contact" />
             </div>
-            <h1 class="font-weight-light text-primary">ADDRESS</h1>
-            <p>908 New Hampshire Avenue</p>
-            <p>Northwest #100, Washington, DC</p>
-            <p>20037, United States</p>
-          </div>
-          <div class="contact-us__item">
-            <div class="contact-us__img">
+            <h1 class="font-weight-light text-white">ADDRESS</h1>
+            <p class="text-grey">908 New Hampshire Avenue</p>
+            <p class="text-grey">Northwest #100, Washington, DC</p>
+            <p class="text-grey">20037, United States</p>
+          </article>
+          <article class="contact-us__item">
+            <div class="contact-us__img d-i-block">
               <img src="./img/phone.png" alt="icon-contact" />
             </div>
-            <h1 class="font-weight-light text-primary">PHONES</h1>
-            <p>Phone: +1 916-875-2235</p>
-            <p>NMobile: +1 916-875-2235</p>
-            <p>Fax: +1 916-875-2235</p>
-          </div>
-          <div class="contact-us__item">
-            <div class="contact-us__img">
+            <h1 class="font-weight-light text-white">PHONES</h1>
+            <p class="text-grey">Phone: +1 916-875-2235</p>
+            <p class="text-grey">NMobile: +1 916-875-2235</p>
+            <p class="text-grey">Fax: +1 916-875-2235</p>
+          </article>
+          <article class="contact-us__item">
+            <div class="contact-us__img d-i-block">
               <img src="./img/contacts.png" alt="icon-contact" />
             </div>
-            <h1 class="font-weight-light text-primary">CONTACTS</h1>
-            <p>info@domain.ltd</p>
-            <p>thegem@domain.ltd</p>
-            <p>www.codex-themes.com</p>
-          </div>
-          <div class="contact-us__item">
-            <div class="contact-us__img">
+            <h1 class="font-weight-light text-white">CONTACTS</h1>
+            <p class="text-grey">info@domain.ltd</p>
+            <p class="text-grey">thegem@domain.ltd</p>
+            <p class="text-grey">www.codex-themes.com</p>
+          </article>
+          <article class="contact-us__item">
+            <div class="contact-us__img d-i-block">
               <img src="./img/working-out.png" alt="icon-contact" />
             </div>
 
-            <h1 class="font-weight-light text-primary">WORKING HOURS</h1>
-            <p>Monday-Friday: 9:00 – 18:00</p>
-            <p>Saturday: 11:00 – 17:00</p>
-            <p>Sunday: Closed</p>
-          </div>
+            <h1 class="font-weight-light text-white">WORKING HOURS</h1>
+            <p class="text-grey">Monday-Friday: 9:00 – 18:00</p>
+            <p class="text-grey">Saturday: 11:00 – 17:00</p>
+            <p class="text-grey">Sunday: Closed</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="empty bg-dark p-relative"></section>
+    <section class="empty bg-dark pos-relative"></section>
 
-    <section class="footer">
-      <div class="footer-widgets">
+    <footer class="footer">
+      <div class="footer-widgets bg-dark">
         <div class="container">
           <div class="footer__list-item d-flex">
             <div class="footer__item">
@@ -1097,7 +1119,7 @@
                 <div class="footer__logo">
                   <img src="./img/logo-outline.png" alt="logo" />
                 </div>
-                <div class="footer__logo-text ff-montserrat text-primary">
+                <div class="footer__logo-text ff-montserrat text-white">
                   <p class="font-weight-light">THE</p>
                   <p class="font-weight-bold">GEM</p>
                 </div>
@@ -1110,21 +1132,21 @@
             </div>
             <div class="footer__item">
               <div
-                class="footer__title font-weight-bold text-primary ff-montserrat p-relative"
+                class="footer__title d-i-block font-weight-bold text-white ff-montserrat pos-relative"
               >
                 USEFUL LINK
               </div>
               <ul class="footer__list-link text-grey">
-                <li class="p-relative">General Information For Users</li>
-                <li class="p-relative">Interactive Fairy Tales</li>
-                <li class="p-relative">Official Storybook Maker Website</li>
-                <li class="p-relative">Everyday Mathematics Links</li>
-                <li class="p-relative">Basic Knowledge and Experience</li>
+                <li class="pos-relative">General Information For Users</li>
+                <li class="pos-relative">Interactive Fairy Tales</li>
+                <li class="pos-relative">Official Storybook Maker Website</li>
+                <li class="pos-relative">Everyday Mathematics Links</li>
+                <li class="pos-relative">Basic Knowledge and Experience</li>
               </ul>
             </div>
             <div class="footer__item">
               <div
-                class="footer__title font-weight-bold text-primary ff-montserrat p-relative"
+                class="footer__title d-i-block font-weight-bold text-white ff-montserrat pos-relative"
               >
                 NEWSLETTER
               </div>
@@ -1132,31 +1154,35 @@
                 Subscribe to our MailChimp newsletter and stay up to date with
                 all events coming straight in your mailbox:
               </div>
-              <div class="footer__text-box p-relative">
+              <div class="footer__text-box pos-relative">
                 <input
-                  class="text-secondary"
+                  class="text-grey border-rounded-low bg-black"
                   type="text"
                   name="address"
                   placeholder="Your email address"
                 />
-                <button>
+                <button
+                  class="btn pos-absolute bg-grey-light d-flex flex-align-i-center flex-jus-c-center"
+                >
                   <i class="fas fa-chevron-right" aria-hidden="true"></i>
                 </button>
-                <p class="text-secondary">Personal data will be encrypted</p>
+                <p class="text-grey">Personal data will be encrypted</p>
               </div>
             </div>
             <div class="footer__item">
               <div
-                class="footer__title font-weight-bold text-primary ff-montserrat p-relative"
+                class="footer__title d-i-block font-weight-bold text-white ff-montserrat pos-relative"
               >
                 RECENT POSTS
               </div>
               <div class="footer__list-post">
-                <div class="footer__post d-flex flex-align-item-center">
-                  <div
-                    class="footer__image border-rounded-50-percent p-relative"
-                  >
-                    <img src="./img/picture1.jpg" alt="image" />
+                <div class="footer__post d-flex flex-align-i-center">
+                  <div class="footer__image border-rounded-circle pos-relative">
+                    <img
+                      class="pos-absolute"
+                      src="./img/picture1.jpg"
+                      alt="image"
+                    />
                   </div>
                   <div class="footer__post-content text-grey">
                     <p>
@@ -1164,7 +1190,7 @@
                       Dolorum corrupti cumque totam eius veritatis saepe
                       laudantium voluptatibus optio mollitia ipsam
                     </p>
-                    <div class="d-flex flex-justify-content-space-between">
+                    <div class="d-flex flex-jus-c-space-between">
                       <span class="footer__date">27 Dec 2015</span>
                       <span class="footer__like d-flex flex-align-item-baseline"
                         ><img src="./img/comment-none.png" alt="comment" />
@@ -1173,11 +1199,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="footer__post d-flex flex-align-item-center">
-                  <div
-                    class="footer__image border-rounded-50-percent p-relative"
-                  >
-                    <img src="./img/picture1.jpg" alt="image" />
+                <div class="footer__post d-flex flex-align-i-center">
+                  <div class="footer__image border-rounded-circle pos-relative">
+                    <img
+                      class="pos-absolute"
+                      src="./img/picture1.jpg"
+                      alt="image"
+                    />
                   </div>
                   <div class="footer__post-content text-grey">
                     <p>
@@ -1185,7 +1213,7 @@
                       Dolorum corrupti cumque totam eius veritatis saepe
                       laudantium voluptatibus optio mollitia ipsam
                     </p>
-                    <div class="d-flex flex-justify-content-space-between">
+                    <div class="d-flex flex-jus-c-space-between">
                       <span class="footer__date">27 Dec 2015</span>
                       <span class="footer__like d-flex flex-align-item-baseline"
                         ><img src="./img/comment.png" alt="comment" /> 0</span
@@ -1198,47 +1226,44 @@
           </div>
         </div>
       </div>
-      <div class="footer-nav text-grey">
-        <div class="container d-flex flex-align-item-center">
-          <div class="footer__item">2019 © Copyrights CodexThemes</div>
-          <div class="footer__item">
+      <div class="footer-nav text-grey bg-black">
+        <div class="container d-flex flex-align-i-center">
+          <div class="footer__nav-item">2019 © Copyrights CodexThemes</div>
+          <div class="footer__nav-item">
             <ul class="footer__contact">
-              <li>Support</li>
-              <li>Contact Us</li>
-              <li>Disclaimer</li>
-              <li>Add More</li>
+              <li class="d-i-block">Support</li>
+              <li class="d-i-block">Contact Us</li>
+              <li class="d-i-block">Disclaimer</li>
+              <li class="d-i-block">Add More</li>
             </ul>
           </div>
-          <div class="footer__item">
-            <ul
-              class="footer__list-social-network d-flex flex-justify-content-center"
-            >
-              <li class="d-flex flex-align-item-center">
+          <div class="footer__nav-item">
+            <ul class="footer__list-social-network d-flex flex-jus-c-center">
+              <li class="d-flex flex-align-i-center">
                 <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
-              <li class="d-flex flex-align-item-center">
+              <li class="d-flex flex-align-i-center">
                 <a href="#"><i class="fab fa-instagram"></i></a>
               </li>
-              <li class="d-flex flex-align-item-center">
+              <li class="d-flex flex-align-i-center">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
               </li>
-              <li class="d-flex flex-align-item-center">
+              <li class="d-flex flex-align-i-center">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
               </li>
-              <li class="d-flex flex-align-item-center">
+              <li class="d-flex flex-align-i-center">
                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
               </li>
-              <li class="d-flex flex-align-item-center">
+              <li class="d-flex flex-align-i-center">
                 <a href="#"><i class="fab fa-youtube"></i></a>
               </li>
-              <li class="d-flex flex-align-item-center">
+              <li class="d-flex flex-align-i-center">
                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- <div class="test" style="width: 100%; height: 1000px"></div> -->
+    </footer>
   </body>
 </html>

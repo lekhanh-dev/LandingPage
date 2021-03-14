@@ -1,14 +1,23 @@
+@import "variables";
+
+@mixin media($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
 @mixin makeClass($prefix, $map, $properties-name) {
   $keys: map.keys($map);
   @each $key in $keys {
     .#{$prefix}-#{$key} {
       #{$properties-name}: map.get($map, $key);
     }
-  }
-}
-
-@mixin media($width) {
-  @media only screen and (max-width: $width) {
-    @content;
+    @each $screen-name, $width in $breakpoint {
+      .#{$prefix}-#{$screen-name}-#{$key} {
+        @include media($width) {
+          #{$properties-name}: map.get($map, $key);
+        }
+      }
+    }
   }
 }

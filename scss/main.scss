@@ -1,4 +1,3 @@
-@use "sass:list";
 @use "sass:map";
 
 @import "./reset";
@@ -106,6 +105,55 @@
   @include media(map.get($breakpoint, "xl")) {
     padding: 20px 0;
   }
+
+  input {
+    display: none;
+    @include media(map.get($breakpoint, "xl")) {
+      &:checked ~ .menu__item:nth-child(3) {
+        transform: translateY(36px);
+        visibility: visible;
+        opacity: 0.9;
+      }
+      &:checked ~ .menu__btn-open::before {
+        transform: rotateZ(45deg);
+        transform-origin: top left;
+      }
+      &:checked ~ .menu__btn-open::after {
+        transform: rotateZ(-45deg);
+        transform-origin: bottom left;
+      }
+      &:checked ~ .menu__btn-open {
+        border-color: transparent;
+      }
+    }
+  }
+
+  &__btn-open {
+    display: none;
+    width: 17px;
+    border-top: 1px solid map.get($text-color, "black");
+    transition: all 0.1s;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      width: 17px;
+      border-top: 1px solid map.get($text-color, "black");
+      position: absolute;
+      transition: all 0.3s ease-out;
+    }
+    &::before {
+      top: -7px;
+      height: 14px;
+    }
+    &::after {
+      top: 5px;
+    }
+    @include media(map.get($breakpoint, "xl")) {
+      display: block;
+    }
+  }
+
   &__item {
     &:nth-child(2) {
       display: none;
@@ -126,58 +174,6 @@
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease-out 0.1s;
-      }
-    }
-  }
-
-  &__left-side {
-    label {
-      cursor: pointer;
-      &::after,
-      &:before {
-        content: "";
-        border-top: 1px solid map.get($background-color, "dark");
-        display: block;
-        width: 17px;
-        transition: transform 0.3s ease-out;
-      }
-      &::after {
-        transform-origin: top left;
-      }
-      &:before {
-        margin-bottom: 5px;
-        transform-origin: bottom left;
-      }
-    }
-    span {
-      border-top: 1px solid map.get($background-color, "dark");
-      margin-bottom: 5px;
-      width: 17px;
-      opacity: 1;
-      visibility: visible;
-      transition: visibility 0.3s ease-out, opacity 0.3s ease-out;
-    }
-  }
-
-  input {
-    display: none;
-    @include media(map.get($breakpoint, "xl")) {
-      &:checked ~ .menu__item:nth-child(3) {
-        transform: translateY(36px);
-        visibility: visible;
-        opacity: 0.9;
-      }
-      &:checked ~ .menu__item label::before {
-        transform: rotateZ(45deg);
-        transform-origin: top left;
-      }
-      &:checked ~ .menu__item label::after {
-        transform: rotateZ(-45deg);
-        transform-origin: bottom left;
-      }
-      &:checked ~ .menu__item > .menu__left-side span {
-        visibility: hidden;
-        opacity: 0;
       }
     }
   }
@@ -1187,7 +1183,7 @@
       flex: 100%;
       padding-top: 66.66%;
       margin: 10px 30px 10px 30px;
-    }
+    } 
     img {
       top: 0;
       left: 0;
@@ -1212,6 +1208,7 @@
     }
   }
   &__position-requirements {
+    padding-top: 20px;
     @include media(map.get($breakpoint, "md")) {
       margin: 30px;
     }
@@ -1226,9 +1223,8 @@
         height: 6px;
         background: #00bcd4;
         position: absolute;
-        top: 50%;
+        top: 5px;
         left: 0;
-        transform: translateY(-50%);
       }
       &:nth-child(2n) {
         padding-left: 57px;
